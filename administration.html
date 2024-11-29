@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administration Panel</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+      }
+      h1 {
+        color: green;
+      }
+      .logout-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #ff5733;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .logout-btn:hover {
+        background-color: #c70039;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selamat Datang di Panel Administrator</h1>
+    <p>Anda telah berhasil login sebagai Administrator.</p>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+    <script>
+      // Fungsi untuk logout
+      function logout() {
+        window.location.href = "index.html"; // Redirect ke halaman login
+      }
+    </script>
+  </body>
+</html>
